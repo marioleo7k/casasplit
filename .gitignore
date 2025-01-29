@@ -1,0 +1,29 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ambiente virtual
+venv/
+.env/
+
+# Arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Arquivos de cache do pip
+*.pydist/
+
+# Arquivos de logs
+*.log
+
+# Streamlit cache
+.streamlit/
+
+# Arquivos de dependências
+Pipfile.lock
+
+# Arquivos temporários
+*.tmp
+*.swp
+.DS_Store
