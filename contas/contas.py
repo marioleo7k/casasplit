@@ -158,7 +158,19 @@ def criar_interface():
     ano_combobox.grid(row=1, column=1, padx=5, pady=10, sticky="ew")
 
     tk.Label(frame_entrada, text="Conta:", bg="#ffffff", font=("Helvetica", 12)).grid(row=2, column=0, padx=5, pady=10, sticky="e")
-    conta_combobox = ttk.Combobox(frame_entrada, values=["Energia", "Água", "Internet", "Geladeira", "Comida", "Netflix", "Materiais de Construção", "Gás"], state="readonly", width=20)
+    conta_combobox = ttk.Combobox(frame_entrada, values=[
+        "Energia", "Água", "Internet", "Telefone Fixo", "Celular", "TV a Cabo", "IPTU",
+        "Aluguel", "Condomínio", "Seguro Residencial", "Gás", "Comida", "Supermercado",
+        "Feira", "Farmácia", "Plano de Saúde", "Academia", "Transporte", "Manutenção do Carro",
+        "Combustível", "Netflix", "Spotify", "Amazon Prime", "Disney+", "HBO Max",
+        "Apple Music", "YouTube Premium", "PlayStation Plus", "Xbox Game Pass", "Steam",
+        "Material de Escritório", "Materiais de Construção", "Móveis", "Eletrodomésticos",
+        "Produtos de Limpeza", "Produtos de Higiene", "Pet Shop", "Veterinário",
+        "Assinatura de Jornal/Revista", "Serviços de Streaming", "Taxa de Lixo",
+        "IPVA", "Seguro do Carro", "Taxa Bancária", "Fatura do Cartão de Crédito",
+        "Empréstimos", "Financiamento Imobiliário", "Financiamento de Veículo"
+    ], 
+    state="readonly", width=30)
     conta_combobox.grid(row=2, column=1, padx=5, pady=10, sticky="ew")
 
     tk.Label(frame_entrada, text="Valor:", bg="#ffffff", font=("Helvetica", 12)).grid(row=3, column=0, padx=5, pady=10, sticky="e")
