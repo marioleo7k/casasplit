@@ -17,8 +17,11 @@ venv/
 # Arquivos de logs
 *.log
 
-# Streamlit cache
-.streamlit/
+# Continua ignorando tudo dentro da pasta .streamlit/
+.streamlit/*
+
+# Mas permite a inclusão do config.toml
+!.streamlit/config.toml
 
 # Arquivos de dependências
 Pipfile.lock
@@ -27,3 +30,7 @@ Pipfile.lock
 *.tmp
 *.swp
 .DS_Store
+
+# Ignorar arquivos do PyInstaller
+build/
+*.spec
